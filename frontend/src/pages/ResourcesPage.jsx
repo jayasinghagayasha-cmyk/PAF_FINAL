@@ -287,7 +287,7 @@ function ResourceFormModal({
 export default function ResourcesPage() {
   const { user } = useAuth();
   const [list, setList] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [form, setForm] = useState(emptyForm);
   const [editingId, setEditingId] = useState(null);
   const [error, setError] = useState(null);
