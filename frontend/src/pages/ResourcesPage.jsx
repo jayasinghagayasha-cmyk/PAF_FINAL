@@ -91,7 +91,7 @@ const typeIcon = {
 // Inline capacity bar chart
 function CapacityBar({ capacity }) {
   if (!capacity) return null;
-  const max = 64;
+  const max = 16;
   const pct = Math.min(100, Math.round((capacity / max) * 100));
   const color =
     pct < 40 ? "bg-emerald-400" : pct < 75 ? "bg-amber-400" : "bg-red-400";
@@ -287,7 +287,7 @@ function ResourceFormModal({
 export default function ResourcesPage() {
   const { user } = useAuth();
   const [list, setList] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [form, setForm] = useState(emptyForm);
   const [editingId, setEditingId] = useState(null);
   const [error, setError] = useState(null);
@@ -297,7 +297,7 @@ export default function ResourcesPage() {
   const [showFormModal, setShowFormModal] = useState(false);
 
   const canManageFacilities = hasAdminRole(user);
-  const pageSize = 15;
+  const pageSize = 20;
   const capacityError = validateCapacity(form.capacity);
 
   async function load() {
