@@ -5,4 +5,4 @@ import com.sliit.smartcampus.entity.enums.BookingStatus;
 public record BookingStatusUpdateRequest(BookingStatus status, String reason) {
 }
 
-// pass 7
+// pass 8
