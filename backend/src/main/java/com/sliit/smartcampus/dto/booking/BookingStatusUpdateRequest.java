@@ -6,3 +6,5 @@ public record BookingStatusUpdateRequest(BookingStatus status, String reason) {
 }
 
 // pass 10
+
+// pass 16
