@@ -28,4 +28,4 @@ public record ResourceResponse(
     }
 }
 
-// pass 6
+// pass 7
