@@ -5,4 +5,4 @@ import com.sliit.smartcampus.entity.enums.TicketStatus;
 public record TicketResolutionRequest(String resolutionNotes, TicketStatus status) {
 }
 
-// pass 4
+// pass 5
