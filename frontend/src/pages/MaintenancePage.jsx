@@ -100,7 +100,7 @@ function SlaChip({ createdAt, status }) {
 // Solution: fetch as blob → create an object URL → pass to <img src>.
 function AuthImage({ src, alt, className, onClick }) {
   const [blobUrl, setBlobUrl] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
